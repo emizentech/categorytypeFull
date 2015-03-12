@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+  <modules>
+    <ET_Categorytype>
+      <active>true</active>
+      <codePool>local</codePool>
+      <version>0.1.0</version>
+    </ET_Categorytype>
+  </modules>
+</config>
