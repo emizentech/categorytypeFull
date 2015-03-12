@@ -5,12 +5,40 @@
       <version>0.1.0</version>
     </ET_Categorytype>
   </modules>
+  <frontend>
+    <routers>
+      <categorytype>
+        <use>standard</use>
+          <args>
+            <module>ET_Categorytype</module>
+            <frontName>categorytype</frontName>
+          </args>
+      </categorytype>
+    </routers>
+		<layout>
+		  <updates>
+			<categorytype>
+			  <file>categorytype.xml</file>
+			</categorytype>
+		  </updates>
+		</layout>
+  </frontend>
   <global>
     <helpers>
       <categorytype>
         <class>ET_Categorytype_Helper</class>
       </categorytype>
     </helpers>
+	<blocks>
+	  <categorytype>
+		<class>ET_Categorytype_Block</class>
+	  </categorytype>
+			<catalog>
+				<rewrite>
+					<category_view>ET_Categorytype_Block_Catalog_Category_View</category_view>
+				</rewrite>
+			</catalog>
+	</blocks>
 	<models>
 	  <categorytype>
 		<class>ET_Categorytype_Model</class>
