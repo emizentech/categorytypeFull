@@ -11,6 +11,15 @@ class ET_Categorytype_Model_Eav_Entity_Attribute_Source_Categoryoptions extends 
         if (is_null($this->_options)) {
             $this->_options = array(
 			
+                array(
+                    "label" => Mage::helper("eav")->__("Accessory type list"),
+                    "value" =>  1
+                ),
+	
+                array(
+                    "label" => Mage::helper("eav")->__("Product list"),
+                    "value" =>  2
+                ),
 	
             );
         }
